@@ -12,8 +12,9 @@
 <body>
     <div class="container">
         <h1>
-            Real-time Audio Transcription
+            SAM Real-time Audio Transcription Test Bed
         </h1>
+        <!--
         <p class="small-caps">
             Using the <a href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> WebSocket API
         </p>
@@ -22,16 +23,16 @@
             Create an <a href="https://aws.amazon.com/free/">AWS Account</a>, attach the necessary <a
                 href="policy.json"> IAM policy</a>, and enter your Access Id and Secret Key below.
         </p>
-
+        -->
         <div id="error" class="isa_error"></div>
 
         <div class="row">
-            <div class="col">
+            <div class="col" style="display: none;">
                 <label>Access ID:</label>
-                <input type="password" id="access_id" placeholder="ACCESS ID" value="" />
+                <input type="password" id="access_id" placeholder="ACCESS ID" value="AKIARX2I4NAOT43AOP3A" />
 
                 <label>Secret Key:</label>
-                <input type="password" id="secret_key" placeholder="SECRET KEY" value="" />
+                <input type="password" id="secret_key" placeholder="SECRET KEY" value="MS8dyMDn7j8y9CIyfv4oLt9y2arU9eC3/lH8JuUU" />
                 <label>Session Token (if using MFA):</label>
                 <input type="password" id="session_token" placeholder="SESSION TOKEN" value="" />
             </div>
@@ -77,7 +78,7 @@
                     Clear Transcript
                 </button>
             </div>
-            <div class="col">
+            <div class="col" style="display: none;">
                 <a class="float-right" href="https://aws.amazon.com/free/" aria-label="Amazon Web Services">
                     <img id="logo" src="AWS_logo_RGB.png" alt="AWS Logo" />
                 </a>
